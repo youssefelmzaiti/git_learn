@@ -1,0 +1,84 @@
+1 /
+nano : cmd qui permet de modifier/créer un fichier 
+nano fichier.ext
+
+2/
+ls -all
+lister tout les élements du rep y compris les fichier caché comme .git
+
+3/
+git add . // en premier 
+git commit -m "commentaire" // ajouter le commit en local 
+git status // etat de la branche 
+git log // voir l'historique des commandes 
+
+4/
+alias: on  donne un nom spécifique à une commande ex:
+au lieu de git  log --pretty=oneline
+on peut configurer un alis lo comme suit
+git config --global alias.lo 'log --pretty=oneline'
+
+et maintenant il suffit d'écrire git lo 
+
+5/
+clear //nettoyer le terminal
+
+6/
+git show  Commit_Nbr // afficher les changements du code eq : différence avec le dernier commit
+
+7/
+niveau staged c'est le niveau avant commit 
+
+8/
+git diff // différence entre la version actuel et le dernier commit au niveau staged niveau avant commit 
+
+9/
+voir les différence entre les commit est bien possible grâce à tortoise git 
+et aussi entre la modiff actuel sans coommit avec le dernier commit 
+
+10/
+git diff  nbr_commit_a  nbr_commit_b // différence entre deux commit a et commit b
+
+11/
+git checkout -b branch_name // créer une branch + switcher 
+// ajoute une nouvelle branche 
+// lors de l'ajout d'une nouvelle branch le nouveau code/modif sera commiter dans le nouvelle branche
+// lors du changement de branch on ne pourra pas accéder au modif d'une branch différente
+
+12/ 
+git checkout branche_name // switcher à une branche
+
+13/
+git branch branch_name // création d'une branche
+
+14/
+git branch // lister les branches disponible
+
+15/
+git diff branche_a branche_b // différence entre 2 branche
+
+16/ 
+merge 2 branche
+git merge branche -m "comment"
+
+17/
+ne pas changer le code master depuis une branche pour ne pas avoir de conflit
+
+18/
+supprimer une branche
+git branch -d branch
+
+19/
+en cas de conflict c'est possible de choisir depuis vscode la modification à conserver 
+tout simplement 
+après le choix il faut faire un commit pour résoudre le conflit du merge
+il est possible de choisir depuis tortoise git la modif par "toroise resolve"
+
+
+20/
+connecter un répertoire github avec un répertoire local git
+git remote add origin lienhttps_repertoire_github
+
+
+21/
+passer par la configuration ssh pour les authentification 
